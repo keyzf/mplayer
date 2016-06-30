@@ -4,14 +4,15 @@
  * @param {number} playMode 播放模式(0->列表循环,1->单曲循环,2->随机,可选,默认为0)
  * @param {number} playList 第一首播放的歌的列表(可选,默认为0)
  * @param {number} playSong 第一首播放的歌在列表中的的索引(不算basic,可选,默认为0)
+ * @param {boolean} autoPlay 是否自动播放，默认true
  */
-function Mplayer(songList,playMode,playList,playSong) {
+function Mplayer(songList,playMode,playList,playSong,autoPlay) {
 	playMode = playMode !== undefined ? playMode : 0;
 	playList = playList !== undefined ? playList : 0;
 	playSong = playSong !== undefined ? playSong : 0;
+	autoPlay = autoPlay !== undefined ? autoPlay : true;
 	var cls = this;
 	var timeArr = [];
-	var currentLrc = 0;
 	// 处理播放模式
 	if (playMode > 2) {
 		playmode = 2;
@@ -24,7 +25,6 @@ function Mplayer(songList,playMode,playList,playSong) {
 		title:$('#mplayer-playing-name'),
 		list:$('#mplayer-list-select-ul'),
 		musicList:$('#mplayer-list'),
-		audio:cls.audiodom,
 		process:$('#mplayer-play-process-current'),
 		bufferProcess:$('#mplayer-play-process-buffer'),
 		totalProcess:$('#mplayer-play-process-total'),
@@ -50,13 +50,17 @@ function Mplayer(songList,playMode,playList,playSong) {
 			'data-currentsong': song,
 			'data-currentlist':list
 		});
-		$('#mplayer-lrcbox').scrollTop(0);
+		$('#mplayer-lrcbox').animate({scrollTop: 0}, 500);
 		cls.doms.cover.attr('src', thissong.image);
 		cls.doms.title.html('<h2>'+ thissong.name + '<small>'+ thissong.singer +'</small></h2>');
 		cls.changeList(list);
 		timeArr = cls.setLrc(thissong.lrc);
-		currentLrc = 0;
+		cls.audiodom.attr('data-currentLrc',  0);
 	};
+	/**
+	 * 更换显示列表
+	 * @param  {number} list 列表序号
+	 */
 	cls.changeList = function (list) {
 		cls.doms.listtitle.html(cls.songArr[list].listName);
 		cls.doms.musicList.html('');
@@ -74,12 +78,21 @@ function Mplayer(songList,playMode,playList,playSong) {
 			lis.eq(song).addClass('mplayer-list-song-current');
 		}
 	};
+	/**
+	 * 设置显示时间
+	 * @param {float} time 时间(s)
+	 * @param {string} ele  显示元素id
+	 */
 	cls.setTime = function (time,ele) {
 		var min = fillByZero(parseInt(time/60),2);
 		time -= min*60;
 		var second = fillByZero(Math.round(time),2);
 		$('#'+ele).html(min+':'+second);
 	};
+	/**
+	 * 设置显示歌词
+	 * @param {string} lrc 歌词字符串
+	 */
 	cls.setLrc = function (lrc) {
 		// 匹配歌词的正则表达式
 		var reg = /\[(\d{2}):(\d{2})\.(\d{2})\]([^\n\r]*)/g;
@@ -109,7 +122,10 @@ function Mplayer(songList,playMode,playList,playSong) {
 		'data-currentsong':playSong,
 		'data-currentLrc':0
 	}).bind('canplay', function () {
-		$(this).get(0).play();
+		if (autoPlay) {
+			$(this).get(0).play();
+		}
+		autoPlay = true;
 		cls.setTime($(this).get(0).duration,'mplayer-play-process-alltime');
 	}).bind('play', function() {
 		cls.doms.coverBox.addClass('mplayer-cover-animate');
@@ -128,9 +144,9 @@ function Mplayer(songList,playMode,playList,playSong) {
 			}
 		}
 		i--;
-		if (currentLrc !== i) {
-			currentLrc = i;
-			$('#mplayer-lrcbox').scrollTop(i*32);
+		if (parseInt(cls.audiodom.attr('data-currentLrc')) !== i) {
+			cls.audiodom.attr('data-currentLrc', i);
+			$('#mplayer-lrcbox').animate({scrollTop: i*32}, 500);
 			$('#mplayer-lrc-wrap .mplayer-lrc-current').removeClass('mplayer-lrc-current');
 			$('#mplayer-lrc-'+timeArr[i]).addClass('mplayer-lrc-current');
 		}

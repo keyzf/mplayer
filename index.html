@@ -14,7 +14,7 @@
 		<div class="mplayer-playing-name" id="mplayer-playing-name">
 			<h2>歌名<small>歌手</small></h2>
 		</div>
-		<a href="#" id="mplayer-menu-switch" class="mplayer-menu-switch">&#xe901;</a>
+		<a href="javascript:viod(0);" id="mplayer-menu-switch" class="mplayer-menu-switch">&#xe901;</a>
 		<div class="mplayer-play-processbox">
 			<div class="mplayer-play-process-total" id="mplayer-play-process-total">
 				<div class="mplayer-play-process-current" id="mplayer-play-process-current"></div>
@@ -25,17 +25,17 @@
 		</div>
 		<div class="mplayer-controlbox">
 			<div class="mplayer-control-buttonbox">
-				<a href="#" class="mplayer-control-button mplayer-hover" id="mplayer-control-button-prev">&#xe90b;</a>
-				<a href="#" class="mplayer-control-button mplayer-hover mplayer-control-button-play" id="mplayer-control-button-play">&#xe908;</a>
-				<a href="#" class="mplayer-control-button mplayer-hover" id="mplayer-control-button-next">&#xe90c;</a>
+				<a href="javascript:viod(0);" class="mplayer-control-button mplayer-hover" id="mplayer-control-button-prev">&#xe90b;</a>
+				<a href="javascript:viod(0);" class="mplayer-control-button mplayer-hover mplayer-control-button-play" id="mplayer-control-button-play">&#xe908;</a>
+				<a href="javascript:viod(0);" class="mplayer-control-button mplayer-hover" id="mplayer-control-button-next">&#xe90c;</a>
 			</div>
 			<div id="mplayer-control-modebox" class="mplayer-control-modebox">
-				<a href="#" class="mplayer-control-mode-button mplayer-hover">&#xe040;</a>
-				<a href="#" class="mplayer-control-mode-button mplayer-hover">&#xe041;</a>
-				<a href="#" class="mplayer-control-mode-button mplayer-hover">&#xe043;</a>
+				<a href="javascript:viod(0);" class="mplayer-control-mode-button mplayer-hover">&#xe040;</a>
+				<a href="javascript:viod(0);" class="mplayer-control-mode-button mplayer-hover">&#xe041;</a>
+				<a href="javascript:viod(0);" class="mplayer-control-mode-button mplayer-hover">&#xe043;</a>
 			</div>
 			<div class="mplayer-control-volbox">
-				<a href="#" class="mplayer-control-vol-mute" id="mplayer-control-vol-mute">&#xe903;</a>
+				<a href="javascript:viod(0);" class="mplayer-control-vol-mute" id="mplayer-control-vol-mute">&#xe903;</a>
 				<input type="range" id="mplayer-control-vol-range" class="mplayer-control-vol-range" min="0" max="100" value="100">
 			</div>
 		</div>
@@ -51,12 +51,12 @@
 		<ul id="mplayer-list" class="mplayer-list"></ul>
 	</div>
 </div>
-<script src="js/library.js" type="text/javascript"></script>
-<!-- <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script> -->
+<script src="http://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="js/mplayer.js" type="text/javascript"></script>
 <script src="js/mplayer-list.js" type="text/javascript"></script>
 <script>
-var mplayer = new Mplayer(mplayer_song,0,0,0);
+var mplayer = new Mplayer(mplayer_song,0,0,0,false);
+console.log(mplayer);
 </script>
 </body>
 </html>

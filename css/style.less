@@ -31,13 +31,6 @@ ul li,ol li {
 	-o-transition: @arg;
 	transition: @arg;
 }
-.noselect() {
-	-webkit-user-select: none;
-	-ms-user-select: none;
-	-moz-user-select: none;
-	-o-user-select: none;
-	user-select: none;
-}
 .mplayer-container {
 	width: 600px;
 	height: 310px;
@@ -49,6 +42,13 @@ ul li,ol li {
 	background-color: rgba(255, 255, 255, .8);
 	.transition(all .5s);
 	overflow-x: hidden;
+	* {
+		-webkit-user-select: none;
+		-ms-user-select: none;
+		-moz-user-select: none;
+		-o-user-select: none;
+		user-select: none;
+	}
 	.mplayer-listbox {
 		width: 0;
 		.transition(all .5s);
@@ -98,7 +98,6 @@ ul li,ol li {
 				width: 299px;
 				font-weight: normal;
 				cursor: pointer;
-				.noselect();
 			}
 			.mplayer-list-select-ul {
 				position: absolute;
@@ -114,7 +113,6 @@ ul li,ol li {
 					line-height: 2;
 					font-size: 16px;
 					text-indent: 2em;
-					.noselect();
 					cursor: pointer;
 					&:hover {
 						background-color: #ABCDEF;
@@ -144,7 +142,7 @@ ul li,ol li {
 			margin: 0 auto;
 			color: #666;
 			cursor: default;
-			.noselect();
+			.transition(all .5s);
 		}
 		.mplayer-lrc-current {
 			color: @green;
