@@ -1,1 +1,384 @@
-*{margin:0;padding:0}body{background-color:#ABCDEF;font-family:'Microsoft Yahei'}a{color:#000;text-decoration:none}ul li,ol li{list-style:none}@font-face{font-family:'mplayer-icon';src:url('icomoon.eot?3ytsig');src:url('icomoon.eot?3ytsig#iefix') format('embedded-opentype'),url('icomoon.ttf?3ytsig') format('truetype'),url('icomoon.woff?3ytsig') format('woff'),url('icomoon.svg?3ytsig#icomoon') format('svg');font-weight:normal;font-style:normal}.mplayer-container{width:600px;height:310px;position:absolute;top:50%;left:50%;margin-left:-300px;margin-top:-155px;background-color:rgba(255,255,255,0.8);-webkit-transition:all .5s;-moz-transition:all .5s;-ms-transition:all .5s;-o-transition:all .5s;transition:all .5s;overflow-x:hidden}.mplayer-container *{-webkit-user-select:none;-ms-user-select:none;-moz-user-select:none;-o-user-select:none;user-select:none}.mplayer-container .mplayer-listbox{width:0;-webkit-transition:all .5s;-moz-transition:all .5s;-ms-transition:all .5s;-o-transition:all .5s;transition:all .5s;position:absolute;left:600px;top:0;border-left:1px solid #7fb80e;height:310px;overflow-x:hidden}.mplayer-container .mplayer-listbox .mplayer-list{width:299px;overflow-y:auto;height:270px}.mplayer-container .mplayer-listbox .mplayer-list .mplayer-list-song-current{background-color:#fff;cursor:default;position:relative}.mplayer-container .mplayer-listbox .mplayer-list .mplayer-list-song-current:before{position:absolute;left:-20px;content:'\e900';font-family:'mplayer-icon';color:#7fb80e;font-size:16px;line-height:30px}.mplayer-container .mplayer-listbox .mplayer-list .mplayer-list-song{line-height:30px;font-size:16px;cursor:pointer;text-indent:30px}.mplayer-container .mplayer-listbox .mplayer-list .mplayer-list-song:hover{background-color:#fff}.mplayer-container .mplayer-listbox .mplayer-list-select .mplayer-list-title{height:40px;background-color:#7fb80e;color:#FFF;font-size:16px;line-height:40px;text-indent:20px;width:299px;font-weight:normal;cursor:pointer}.mplayer-container .mplayer-listbox .mplayer-list-select .mplayer-list-select-ul{position:absolute;margin-left:-1px;background-color:#fff;width:298px;max-height:268px;border:1px solid #7fb80e;z-index:5;display:none;overflow:hidden}.mplayer-container .mplayer-listbox .mplayer-list-select .mplayer-list-select-ul li{line-height:2;font-size:16px;text-indent:2em;cursor:pointer}.mplayer-container .mplayer-listbox .mplayer-list-select .mplayer-list-select-ul li:hover{background-color:#ABCDEF}.mplayer-container .mplayer-listbox .mplayer-list-select-on .mplayer-list-select-ul{display:block}.mplayer-container .mplayer-lrcbox{background-color:#fff;height:170px;width:600px;overflow-y:auto}.mplayer-container .mplayer-lrcbox .mplayer-lrc-wrap{margin:65px 0}.mplayer-container .mplayer-lrcbox .mplayer-lrc{font-size:16px;line-height:2;text-align:center;width:80%;margin:0 auto;color:#666;cursor:default;-webkit-transition:all .5s;-moz-transition:all .5s;-ms-transition:all .5s;-o-transition:all .5s;transition:all .5s}.mplayer-container .mplayer-lrcbox .mplayer-lrc-current{color:#7fb80e;font-size:20px}.mplayer-container .mplayer-playbox{height:140px;width:600px;position:relative}.mplayer-container .mplayer-playbox .mplayer-controlbox .mplayer-control-modebox{position:absolute;top:77px;left:490px}.mplayer-container .mplayer-playbox .mplayer-controlbox .mplayer-control-modebox .mplayer-control-mode-button{font-family:'mplayer-icon';color:#7fb80e;font-size:20px}.mplayer-container .mplayer-playbox .mplayer-controlbox .mplayer-control-volbox{position:absolute;top:100px;left:435px}.mplayer-container .mplayer-playbox .mplayer-controlbox .mplayer-control-volbox .mplayer-control-vol-mute{font-family:'mplayer-icon';color:#7fb80e}.mplayer-container .mplayer-playbox .mplayer-controlbox .mplayer-control-volbox .mplayer-control-vol-range{width:100px;height:3px;background-color:#7fb80e;position:relative;top:-5px;margin-left:5px;-webkit-appearance:none;outline:none}.mplayer-container .mplayer-playbox .mplayer-controlbox .mplayer-control-volbox .mplayer-control-vol-range::-webkit-slider-thumb{-webkit-appearance:none;cursor:pointer;width:10px;height:10px;background-color:#fff;border:1px solid #7fb80e;border-radius:50%}.mplayer-container .mplayer-playbox .mplayer-controlbox .mplayer-control-buttonbox{position:absolute;top:70px;left:200px}.mplayer-container .mplayer-playbox .mplayer-controlbox .mplayer-control-buttonbox .mplayer-control-button{font-family:'mplayer-icon';color:#7fb80e;font-size:35px;margin-right:20px}.mplayer-container .mplayer-playbox .mplayer-controlbox .mplayer-control-buttonbox .mplayer-control-button-play{font-size:50px;position:relative;top:6px}.mplayer-container .mplayer-playbox .mplayer-play-processbox .mplayer-play-process-time{position:absolute;right:35px;top:35px}.mplayer-container .mplayer-playbox .mplayer-play-processbox .mplayer-play-process-time span{color:#666;font-size:14px}.mplayer-container .mplayer-playbox .mplayer-play-processbox .mplayer-play-process-time .mplayer-play-process-alltime:before{content:' / '}.mplayer-container .mplayer-playbox .mplayer-play-processbox .mplayer-play-process-total{width:400px;height:2px;background-color:#FFF;border:1px solid #7fb80e;position:absolute;top:60px;left:160px;cursor:pointer}.mplayer-container .mplayer-playbox .mplayer-play-processbox .mplayer-play-process-total .mplayer-play-process-current{background-color:#7fb80e;width:0;height:3px}.mplayer-container .mplayer-playbox .mplayer-menu-switch{position:absolute;right:0;top:0;display:inline-block;width:30px;height:30px;color:#7fb80e;font-family:'mplayer-icon';font-size:20px;line-height:30px;text-align:center}.mplayer-container .mplayer-playbox .mplayer-playing-name{position:absolute;left:160px;top:20px}.mplayer-container .mplayer-playbox .mplayer-playing-name h2{font-weight:bold;font-size:24px}.mplayer-container .mplayer-playbox .mplayer-playing-name h2 small{color:#AAA;font-size:16px;font-weight:normal}.mplayer-container .mplayer-playbox .mplayer-playing-name h2 small:before{content:" - "}.mplayer-container .mplayer-playbox .mplayer-cover{width:120px;height:120px;position:absolute;top:10px;left:20px;border-radius:50%;overflow:hidden}.mplayer-container .mplayer-playbox .mplayer-cover img{width:100%;height:100%}.mplayer-container .mplayer-playbox .mplayer-cover-animate{animation:mplayer-rotate 10s linear infinite}.mplayer-container .mplayer-lrcbox::-webkit-scrollbar,.mplayer-container .mplayer-list::-webkit-scrollbar{width:5px}.mplayer-container .mplayer-lrcbox::-webkit-scrollbar-track,.mplayer-container .mplayer-list::-webkit-scrollbar-track{background-color:#BBB;border-radius:3px}.mplayer-container .mplayer-lrcbox::-webkit-scrollbar-thumb,.mplayer-container .mplayer-list::-webkit-scrollbar-thumb{background-color:#7fb80e;border-radius:3px}.mplayer-play-list-on{width:900px;margin-left:-450px}.mplayer-play-list-on .mplayer-menu-switch{background-color:#7fb80e !important;color:#fff !important}.mplayer-play-list-on .mplayer-listbox{width:299px;display:block}.mplayer-deep-green{color:#3e5907 !important}.mplayer-hover:hover{color:#3e5907 !important}@keyframes mplayer-rotate{from{-webkit-transform:rotate(0);-moz-transform:rotate(0);-ms-transform:rotate(0);-o-transform:rotate(0);transform:rotate(0)}to{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-ms-transform:rotate(360deg);-o-transform:rotate(360deg);transform:rotate(360deg)}}
+/* line 1, style.less */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* line 5, style.less */
+body {
+  background-color: #ABCDEF;
+  font-family: 'Microsoft Yahei';
+}
+/* line 9, style.less */
+a {
+  color: #000;
+  text-decoration: none;
+}
+/* line 13, style.less */
+ul li,
+ol li {
+  list-style: none;
+}
+/* 样式从此开始 */
+@font-face {
+  font-family: 'mplayer-icon';
+  src: url('icomoon.eot?3ytsig');
+  src: url('icomoon.eot?3ytsig#iefix') format('embedded-opentype'), url('icomoon.ttf?3ytsig') format('truetype'), url('icomoon.woff?3ytsig') format('woff'), url('icomoon.svg?3ytsig#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 38, style.less */
+.mplayer-container {
+  width: 600px;
+  height: 310px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -300px;
+  margin-top: -155px;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  overflow-x: hidden;
+}
+/* line 49, style.less */
+.mplayer-container * {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+/* line 56, style.less */
+.mplayer-container .mplayer-listbox {
+  width: 0;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  position: absolute;
+  left: 600px;
+  top: 0;
+  border-left: 1px solid #7fb80e;
+  height: 310px;
+  overflow-x: hidden;
+}
+/* line 65, style.less */
+.mplayer-container .mplayer-listbox .mplayer-list {
+  width: 299px;
+  overflow-y: auto;
+  height: 270px;
+}
+/* line 69, style.less */
+.mplayer-container .mplayer-listbox .mplayer-list .mplayer-list-song-current {
+  background-color: #fff;
+  cursor: default;
+  position: relative;
+}
+/* line 73, style.less */
+.mplayer-container .mplayer-listbox .mplayer-list .mplayer-list-song-current:before {
+  position: absolute;
+  left: -20px;
+  content: '\e900';
+  font-family: 'mplayer-icon';
+  color: #7fb80e;
+  font-size: 16px;
+  line-height: 30px;
+}
+/* line 84, style.less */
+.mplayer-container .mplayer-listbox .mplayer-list .mplayer-list-song {
+  line-height: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  text-indent: 30px;
+}
+/* line 89, style.less */
+.mplayer-container .mplayer-listbox .mplayer-list .mplayer-list-song:hover {
+  background-color: #fff;
+}
+/* line 95, style.less */
+.mplayer-container .mplayer-listbox .mplayer-list-select .mplayer-list-title {
+  height: 40px;
+  background-color: #7fb80e;
+  color: #FFF;
+  font-size: 16px;
+  line-height: 40px;
+  text-indent: 20px;
+  width: 299px;
+  font-weight: normal;
+  cursor: pointer;
+}
+/* line 106, style.less */
+.mplayer-container .mplayer-listbox .mplayer-list-select .mplayer-list-select-ul {
+  position: absolute;
+  margin-left: -1px;
+  background-color: #fff;
+  width: 298px;
+  max-height: 268px;
+  border: 1px solid #7fb80e;
+  z-index: 5;
+  display: none;
+  overflow: hidden;
+}
+/* line 116, style.less */
+.mplayer-container .mplayer-listbox .mplayer-list-select .mplayer-list-select-ul li {
+  line-height: 2;
+  font-size: 16px;
+  text-indent: 2em;
+  cursor: pointer;
+}
+/* line 121, style.less */
+.mplayer-container .mplayer-listbox .mplayer-list-select .mplayer-list-select-ul li:hover {
+  background-color: #ABCDEF;
+}
+/* line 128, style.less */
+.mplayer-container .mplayer-listbox .mplayer-list-select-on .mplayer-list-select-ul {
+  display: block;
+}
+/* line 133, style.less */
+.mplayer-container .mplayer-lrcbox {
+  background-color: #fff;
+  height: 170px;
+  width: 600px;
+  overflow-y: auto;
+}
+/* line 138, style.less */
+.mplayer-container .mplayer-lrcbox .mplayer-lrc-wrap {
+  margin: 65px 0;
+}
+/* line 141, style.less */
+.mplayer-container .mplayer-lrcbox .mplayer-lrc {
+  font-size: 16px;
+  line-height: 2;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  color: #666;
+  cursor: default;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+/* line 151, style.less */
+.mplayer-container .mplayer-lrcbox .mplayer-lrc-current {
+  color: #7fb80e;
+  font-size: 20px;
+}
+/* line 156, style.less */
+.mplayer-container .mplayer-playbox {
+  height: 140px;
+  width: 600px;
+  position: relative;
+}
+/* line 161, style.less */
+.mplayer-container .mplayer-playbox .mplayer-controlbox .mplayer-control-modebox {
+  position: absolute;
+  top: 77px;
+  left: 490px;
+}
+/* line 165, style.less */
+.mplayer-container .mplayer-playbox .mplayer-controlbox .mplayer-control-modebox .mplayer-control-mode-button {
+  font-family: 'mplayer-icon';
+  color: #7fb80e;
+  font-size: 20px;
+}
+/* line 171, style.less */
+.mplayer-container .mplayer-playbox .mplayer-controlbox .mplayer-control-volbox {
+  position: absolute;
+  top: 100px;
+  left: 435px;
+}
+/* line 175, style.less */
+.mplayer-container .mplayer-playbox .mplayer-controlbox .mplayer-control-volbox .mplayer-control-vol-mute {
+  font-family: 'mplayer-icon';
+  color: #7fb80e;
+}
+/* line 179, style.less */
+.mplayer-container .mplayer-playbox .mplayer-controlbox .mplayer-control-volbox .mplayer-control-vol-range {
+  width: 100px;
+  height: 3px;
+  background-color: #7fb80e;
+  position: relative;
+  top: -5px;
+  margin-left: 5px;
+  -webkit-appearance: none;
+  outline: none;
+}
+/* line 188, style.less */
+.mplayer-container .mplayer-playbox .mplayer-controlbox .mplayer-control-volbox .mplayer-control-vol-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border: 1px solid #7fb80e;
+  border-radius: 50%;
+}
+/* line 199, style.less */
+.mplayer-container .mplayer-playbox .mplayer-controlbox .mplayer-control-buttonbox {
+  position: absolute;
+  top: 70px;
+  left: 200px;
+}
+/* line 203, style.less */
+.mplayer-container .mplayer-playbox .mplayer-controlbox .mplayer-control-buttonbox .mplayer-control-button {
+  font-family: 'mplayer-icon';
+  color: #7fb80e;
+  font-size: 35px;
+  margin-right: 20px;
+}
+/* line 209, style.less */
+.mplayer-container .mplayer-playbox .mplayer-controlbox .mplayer-control-buttonbox .mplayer-control-button-play {
+  font-size: 50px;
+  position: relative;
+  top: 6px;
+}
+/* line 217, style.less */
+.mplayer-container .mplayer-playbox .mplayer-play-processbox .mplayer-play-process-time {
+  position: absolute;
+  right: 35px;
+  top: 35px;
+}
+/* line 221, style.less */
+.mplayer-container .mplayer-playbox .mplayer-play-processbox .mplayer-play-process-time span {
+  color: #666;
+  font-size: 14px;
+}
+/* line 226, style.less */
+.mplayer-container .mplayer-playbox .mplayer-play-processbox .mplayer-play-process-time .mplayer-play-process-alltime:before {
+  content: ' / ';
+}
+/* line 231, style.less */
+.mplayer-container .mplayer-playbox .mplayer-play-processbox .mplayer-play-process-total {
+  width: 400px;
+  height: 2px;
+  background-color: #FFF;
+  border: 1px solid #7fb80e;
+  position: absolute;
+  top: 60px;
+  left: 160px;
+  cursor: pointer;
+}
+/* line 240, style.less */
+.mplayer-container .mplayer-playbox .mplayer-play-processbox .mplayer-play-process-total .mplayer-play-process-current {
+  background-color: #7fb80e;
+  width: 0;
+  height: 3px;
+}
+/* line 247, style.less */
+.mplayer-container .mplayer-playbox .mplayer-menu-switch {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  color: #7fb80e;
+  font-family: 'mplayer-icon';
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+}
+/* line 260, style.less */
+.mplayer-container .mplayer-playbox .mplayer-playing-name {
+  position: absolute;
+  left: 160px;
+  top: 20px;
+}
+/* line 264, style.less */
+.mplayer-container .mplayer-playbox .mplayer-playing-name h2 {
+  font-weight: bold;
+  font-size: 24px;
+}
+/* line 267, style.less */
+.mplayer-container .mplayer-playbox .mplayer-playing-name h2 small {
+  color: #AAA;
+  font-size: 16px;
+  font-weight: normal;
+}
+/* line 271, style.less */
+.mplayer-container .mplayer-playbox .mplayer-playing-name h2 small:before {
+  content: " - ";
+}
+/* line 278, style.less */
+.mplayer-container .mplayer-playbox .mplayer-cover {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+/* line 286, style.less */
+.mplayer-container .mplayer-playbox .mplayer-cover img {
+  width: 100%;
+  height: 100%;
+}
+/* line 291, style.less */
+.mplayer-container .mplayer-playbox .mplayer-cover-animate {
+  animation: mplayer-rotate 10s linear infinite;
+}
+/* line 296, style.less */
+.mplayer-container .mplayer-lrcbox::-webkit-scrollbar,
+.mplayer-container .mplayer-list::-webkit-scrollbar {
+  width: 5px;
+}
+/* line 299, style.less */
+.mplayer-container .mplayer-lrcbox::-webkit-scrollbar-track,
+.mplayer-container .mplayer-list::-webkit-scrollbar-track {
+  background-color: #BBB;
+  border-radius: 3px;
+}
+/* line 303, style.less */
+.mplayer-container .mplayer-lrcbox::-webkit-scrollbar-thumb,
+.mplayer-container .mplayer-list::-webkit-scrollbar-thumb {
+  background-color: #7fb80e;
+  border-radius: 3px;
+}
+/* line 310, style.less */
+.mplayer-play-list-on {
+  width: 900px;
+  margin-left: -450px;
+}
+/* line 313, style.less */
+.mplayer-play-list-on .mplayer-menu-switch {
+  background-color: #7fb80e !important;
+  color: #fff !important;
+}
+/* line 317, style.less */
+.mplayer-play-list-on .mplayer-listbox {
+  width: 299px;
+  display: block;
+}
+/* line 322, style.less */
+.mplayer-deep-green {
+  color: #3e5907 !important;
+}
+/* line 326, style.less */
+.mplayer-hover:hover {
+  color: #3e5907 !important;
+}
+@keyframes mplayer-rotate {
+  /* line 331, style.less */
+  from {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+  }
+  /* line 338, style.less */
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
