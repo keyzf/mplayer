@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
-<title>主页 - mPlayer音乐播放器</title>
+<title>下载 - mPlayer音乐播放器</title>
 <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
 <link rel="stylesheet" href="static/style.css">
@@ -22,8 +22,8 @@
 		</div>
 		<div class="collapse navbar-collapse" id="collapse">
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="./index.html">首页</a></li>
-				<li><a href="./download.html">下载</a></li>
+				<li><a href="./index.html">首页</a></li>
+				<li class="active"><a href="./download.html">下载</a></li>
 				<li><a href="./demo.html" target="_blank">演示</a></li>
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">文档 <span class="caret"></span></a>
@@ -46,70 +46,41 @@
 	<div class="container">
 		<h1>mPlayer音乐播放器</h1>
 		<p>高度可定制的Web音乐播放器</p>
-		<p class="btn-group hidden-xs">
-			<a class="btn btn-primary btn-lg" href="./demo.html" target="_blank"><span class="fa fa-book fa-lg"></span> 查看Demo</a>
-			<a class="btn btn-primary btn-lg" href="./download.html"><span class="fa fa-download fa-lg"></span> 下载</a>
-		</p>
-		<p class="btn-group visible-xs">
-			<a class="btn btn-primary" href="./demo.html" target="_blank"><span class="fa fa-book fa-lg"></span> Demo</a>
-			<a class="btn btn-primary" href="./download.html"><span class="fa fa-download fa-lg"></span> 下载</a>
-		</p>
+		<a class="btn btn-primary btn-lg" href="./demo.html" target="_blank"><span class="fa fa-book fa-lg"></span> 查看Demo</a>
 	</div>
 </div>
 <div class="container">
-	<div class="row text-center">
-		<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-			<img src="static/lrc.png" alt="describe image" class="desc img-responsive">
-			<h3>LRC歌词</h3>
-			<p>您只需将lrc歌词复制到指定的地方即可享受实时歌词显示功能</p>
-		</div>
-		<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-			<img src="static/list.png" alt="describe image" class="desc img-responsive">
-			<h3>多列表功能</h3>
-			<p>多个列表想换就换，想听哪个就听哪个，多列表就是这么任性！</p>
-		</div>
-		<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-			<img src="static/mode.png" alt="describe image" class="desc img-responsive">
-			<h3>多种播放模式</h3>
-			<p>随机、列表、单曲三种播放模式随心切换，最接近客户端的体验！</p>
-		</div>
-		<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-			<img src="static/style.png" alt="describe image" class="desc img-responsive">
-			<h3>样式自定义</h3>
-			<p>通过<a href="./documentation.html#diy">文档</a>中的提示，您只需要写很少的CSS就可以轻松定制一份属于您自己的mPlayer播放器</p>
-		</div>
-	</div>
-	<h2>未来可能会添加的功能</h2>
+	<p class="pull-left">感谢您选择mPlayer播放器，请根据所需功能选择合适的版本进行下载</p>
+	<p class="pull-right">更多历史版本请访问<a href="https://github.com/0936zz/mplayer">Github</a></p>
 	<div class="table-responsive">
-		<table class="table table-hover table-striped">
+		<table class="table table-striped table-hover download">
 			<tr>
-				<th>功能</th>
-				<th>期待率</th>
-				<th>状态</th>
+				<td width="40" class="text-success">NEW</td>
+				<td>mPlayer1.3.3压缩版</td>
+				<td>47.3KB</td>
+				<td><a href="#"><span class="fa fa-download"></span> Download</a></td>
 			</tr>
 			<tr>
-				<td>兼容IE8</td>
-				<td>0%</td>
-				<td>制作中</td>
+				<td width="40" class="text-success">NEW</td>
+				<td>mPlayer1.3.3开发版</td>
+				<td>58.2KB</td>
+				<td><a href="#"><span class="fa fa-download"></span> Download</a></td>
 			</tr>
 			<tr>
-				<td>移动端优化</td>
-				<td>0%</td>
-				<td>未开工</td>
+				<td width="40" class="text-success">NEW</td>
+				<td>mPlayer1.3.3完整版（带演示）</td>
+				<td>34.9MB</td>
+				<td><a href="#"><span class="fa fa-download"></span> Download</a></td>
 			</tr>
 			<tr>
-				<td>快捷键绑定</td>
-				<td>0%</td>
-				<td>未开工</td>
-			</tr>
-			<tr>
-				<td>悬浮歌词</td>
-				<td>0%</td>
-				<td>未开工</td>
+				<td></td>
+				<td>mPlayer单曲版</td>
+				<td>-</td>
+				<td>即将推出</td>
 			</tr>
 		</table>
 	</div>
-	<p>没有您想要的功能？请<a href="https://github.com/0936zz/mplayer/issues/new" target="_blank">发issue</a>告诉我，我会第一时间回复您</p>
+	<p>如果您还不会使用，请<a href="./documentation.html">点击此处</a>查阅我们的参考文档</p>
 </div>
 <footer class="bg-primary">
 	<div class="container">
@@ -124,6 +95,8 @@
 		</div>
 	</div>
 </footer>
+
+
 <script src="http://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </body>
